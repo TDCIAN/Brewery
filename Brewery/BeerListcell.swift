@@ -33,7 +33,7 @@ final class BeerListcell: UITableViewCell {
         
         beerImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.leading.trailing.bottom.equalToSuperview().inset(20)
+            $0.leading.equalToSuperview().inset(20)
             $0.width.equalTo(80)
             $0.height.equalTo(120)
         }
