@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BeerListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

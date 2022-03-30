@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		1E5D1E5C27F418C300709FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D1E5B27F418C300709FE7 /* AppDelegate.swift */; };
 		1E5D1E5E27F418C300709FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D1E5D27F418C300709FE7 /* SceneDelegate.swift */; };
-		1E5D1E6027F418C300709FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D1E5F27F418C300709FE7 /* ViewController.swift */; };
+		1E5D1E6027F418C300709FE7 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D1E5F27F418C300709FE7 /* BeerListViewController.swift */; };
 		1E5D1E6527F418C500709FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5D1E6427F418C500709FE7 /* Assets.xcassets */; };
 		1E5D1E6827F418C500709FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5D1E6627F418C500709FE7 /* LaunchScreen.storyboard */; };
 		1E5D1E7127F418DE00709FE7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E5D1E7027F418DE00709FE7 /* SnapKit */; };
+		1E5D1E7627F41AD400709FE7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1E5D1E7527F41AD400709FE7 /* Kingfisher */; };
+		1E5D1E7827F41BA600709FE7 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D1E7727F41BA600709FE7 /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E5D1E5827F418C300709FE7 /* Brewery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5D1E5B27F418C300709FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E5D1E5D27F418C300709FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E5D1E5F27F418C300709FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E5D1E5F27F418C300709FE7 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		1E5D1E6427F418C500709FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5D1E6727F418C500709FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E5D1E6927F418C500709FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E5D1E7327F4192000709FE7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		1E5D1E7727F41BA600709FE7 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5D1E7627F41AD400709FE7 /* Kingfisher in Frameworks */,
 				1E5D1E7127F418DE00709FE7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,10 +64,11 @@
 			children = (
 				1E5D1E5B27F418C300709FE7 /* AppDelegate.swift */,
 				1E5D1E5D27F418C300709FE7 /* SceneDelegate.swift */,
-				1E5D1E5F27F418C300709FE7 /* ViewController.swift */,
+				1E5D1E5F27F418C300709FE7 /* BeerListViewController.swift */,
 				1E5D1E6427F418C500709FE7 /* Assets.xcassets */,
 				1E5D1E6627F418C500709FE7 /* LaunchScreen.storyboard */,
 				1E5D1E6927F418C500709FE7 /* Info.plist */,
+				1E5D1E7727F41BA600709FE7 /* Beer.swift */,
 			);
 			path = Brewery;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			name = Brewery;
 			packageProductDependencies = (
 				1E5D1E7027F418DE00709FE7 /* SnapKit */,
+				1E5D1E7527F41AD400709FE7 /* Kingfisher */,
 			);
 			productName = Brewery;
 			productReference = 1E5D1E5827F418C300709FE7 /* Brewery.app */;
@@ -118,6 +124,7 @@
 			mainGroup = 1E5D1E4F27F418C300709FE7;
 			packageReferences = (
 				1E5D1E6F27F418DE00709FE7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1E5D1E7427F41AD400709FE7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1E5D1E5927F418C300709FE7 /* Products */;
 			projectDirPath = "";
@@ -166,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5D1E6027F418C300709FE7 /* ViewController.swift in Sources */,
+				1E5D1E6027F418C300709FE7 /* BeerListViewController.swift in Sources */,
 				1E5D1E5C27F418C300709FE7 /* AppDelegate.swift in Sources */,
 				1E5D1E5E27F418C300709FE7 /* SceneDelegate.swift in Sources */,
+				1E5D1E7827F41BA600709FE7 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +400,14 @@
 				kind = branch;
 			};
 		};
+		1E5D1E7427F41AD400709FE7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -399,6 +415,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1E5D1E6F27F418DE00709FE7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		1E5D1E7527F41AD400709FE7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E5D1E7427F41AD400709FE7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
